@@ -1,0 +1,42 @@
+//Colors
+$blue : rgb(0, 195, 255);
+$black: #333;
+$darkerBlack: #111;
+$grey: rgba(255, 255, 255, 0.756);
+$active : rgba(0, 195, 255, 0.552);
+
+body {
+    background-color: $blue;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $black;
+
+        li {
+            float: left;
+
+            a {
+                display: block;
+                color: $grey;
+                text-align: center;
+                padding: 46% 178%;
+                text-decoration: none;
+
+                &:hover:not(.active) {
+                    background-color: $darkerBlack;
+                }
+            }
+        }
+    }
+
+    .active {
+        background-color: $active;
+    }
+}

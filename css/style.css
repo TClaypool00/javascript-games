@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(0, 195, 255);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar ul li {
+  float: left;
+}
+.navbar ul li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.756);
+  text-align: center;
+  padding: 46% 178%;
+  text-decoration: none;
+}
+.navbar ul li a:hover:not(.active) {
+  background-color: #111;
+}
+.navbar .active {
+  background-color: rgba(0, 195, 255, 0.552);
+}/*# sourceMappingURL=style.css.map */
