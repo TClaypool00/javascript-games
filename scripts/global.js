@@ -11,6 +11,8 @@ function createNavBar() {
     for (let i = 0; i < pages.length; i++) {
         const page = pages[i];
         let url = '';
+        
+        url = url + '/pages/'
 
         if (page.indexOf(' ') > 0) {
             url = page.replace(' ', '-');
