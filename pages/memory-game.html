@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title></title>
+</head>
+<body>
+    <p id="successMessage"></p>
+    <h1>Memory game</h1>
+
+    <button id="btnReset" type="button">Reset</button>
+    <div id="hangmanDiv" class="container">
+
+    </div>
+    
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/global.js"></script>
+    <script src="../scripts/memory-game.js"></script>
+    <script>
+        $(document).ready(function() {
+            createNavBar();
+            generateBoard();
+            randomizedBoard();
+
+            btnReset.disabled = true;
+        });
+    </script>
+</body>
+</html>

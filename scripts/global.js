@@ -1,6 +1,6 @@
 function createNavBar() {
     const appName = 'JavaScript Games'
-    const pages = ['index'];
+    const pages = ['Index', 'Memory Game'];
 
     const navbar = document.createElement('nav');
     navbar.classList.add('navbar');
@@ -15,9 +15,9 @@ function createNavBar() {
         url = url + '/pages/'
 
         if (page.indexOf(' ') > 0) {
-            url = page.replace(' ', '-');
+            url = page.replace(' ', '-').toLowerCase();
         } else {
-            url = page;
+            url = page.toLowerCase();
         }
 
         url = url + '.html';
