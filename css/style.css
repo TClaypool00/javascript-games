@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.container {
+  padding: 5%;
+}
+
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -18,7 +22,7 @@ body {
   display: block;
   color: rgba(255, 255, 255, 0.756);
   text-align: center;
-  padding: 46% 178%;
+  padding: 14px 16px;
   text-decoration: none;
 }
 .navbar ul li a:hover:not(.active) {
@@ -26,4 +30,13 @@ body {
 }
 .navbar .active {
   background-color: rgba(0, 195, 255, 0.552);
+}
+
+.card {
+  padding: 1% 4%;
+  cursor: pointer;
+}
+
+.turnedOver {
+  cursor: not-allowed;
 }/*# sourceMappingURL=style.css.map */
